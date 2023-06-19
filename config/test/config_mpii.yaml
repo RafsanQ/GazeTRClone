@@ -1,0 +1,23 @@
+---
+test:
+
+    load:
+        begin_step: 1
+        end_step: 80
+        steps: 5
+
+    data: 
+        image: "X:\\Itracker - For MPIIGaze\\Itracker\\PreprocessedMPIIGazeDataset\\Image"
+        label: "X:\\Itracker - For MPIIGaze\\Itracker\\PreprocessedMPIIGazeDataset\\Label"
+        name: mpii
+        header: True
+        isFolder: True
+
+    savename: "evaluation"
+
+    device: 0
+
+    reader: reader
+
+# dropout = 0
+# dim_feed = 512

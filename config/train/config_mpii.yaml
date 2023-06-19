@@ -1,0 +1,35 @@
+---
+train:
+
+    params:
+        batch_size: 1
+        epoch: 15
+        lr: 0.0005
+        decay: 0.5
+        decay_step: 60
+        warmup: 5
+
+    save:
+        metapath: "X:\\GazeTR\\GazeTR\\Checkpoints"
+        folder: mpii
+        model_name: trans6
+        step: 5
+
+    data:
+        image: "X:\\Itracker - For MPIIGaze\\Itracker\\PreprocessedMPIIGazeDataset\\Image"
+        label: "X:\\Itracker - For MPIIGaze\\Itracker\\PreprocessedMPIIGazeDataset\\Label"
+        header: True
+        name: mpii
+        isFolder: True
+        
+    pretrain:
+        enable: false
+        path: "X:\\GazeTR\\GazeTR\\pretrtains\\trans6"
+        device: 0
+
+    device: 0
+
+    reader: reader
+
+# dropout = 0
+# dim_feed = 512
